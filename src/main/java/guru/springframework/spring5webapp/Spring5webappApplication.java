@@ -1,13 +1,13 @@
-package com.example.demoApp;
+package guru.springframework.spring5webapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoAppApplication {
+public class Spring5webappApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoAppApplication.class, args);
+		SpringApplication.run(Spring5webappApplication.class, args);
 	}
 
 }
