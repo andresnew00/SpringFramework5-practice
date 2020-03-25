@@ -22,6 +22,7 @@ public class BootController {
         // a model object which has a name of books and contains a list of books
         model.addAttribute("books", bookRepository.findAll());
 
-        return "books";
+        //this will point at the templates package look into books and use list.html
+        return "books/list";
     }
 }

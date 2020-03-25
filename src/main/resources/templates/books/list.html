@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--this is the thymeleaf namespace (gets thymeleaf extensions) -->
+<html lang="en" xml:th="http://www.thymeleaf.org" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Framework Practice</title>
+</head>
+<body>
+<h1>Book List</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Publisher</th>
+    </tr>
+<!-- thymeleaf is going to iterate through the model and render for each element in the book list-->
+    <tr th:each="book: ${books}">
+        <th th:text="${book.id}">123</th>
+        <th th:text="${book.title}">Spring in Action</th>
+        <th th:text="${book.publisher.name}">Wrox</th>
+    </tr>
+</table>
+
+</body>
+</html>
